@@ -1,9 +1,15 @@
-plugins {
-    id 'java'
-}
+
 
 group = 'org.example'
 version = '1.0-SNAPSHOT'
+
+ext {
+    artifactoryRepoName = 'automation-local'
+    lombokVersion = '1.18.26'
+}
+
+
+apply plugin: 'java'
 
 repositories {
     mavenCentral()
